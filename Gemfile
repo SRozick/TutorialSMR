@@ -20,12 +20,20 @@ group :development, :test do
   for more info  (note: 3.0.0 failed, 2.13.1 worked, 3.0.1 worked)
   See also https://rubygems.org/gems/rspec-rails/versions
 =end
-  gem 'rspec-rails', '3.0.1'
+  gem 'rspec-rails', '2.13.1'
+
+  gem 'capybara', '2.1.0'
+
+=begin
+  minitest is required by rspec-rails 2.13.1
+  and Rails 4.1.0 or greater.  See bug report at
+  https://github.com/rspec/rspec-rails/issues/758
+=end
+  gem 'minitest'
 end
 
 group :test do
   gem 'selenium-webdriver'
-  gem 'capybara'
 end
 
 group :development do
