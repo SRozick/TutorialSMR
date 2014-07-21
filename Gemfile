@@ -14,9 +14,12 @@ gem 'turbolinks'
 gem 'jbuilder'
 
 group :development, :test do
-  # Version 2.13.1 required or generate rspec fails.  See
-  # http://stackoverflow.com/questions/22962048/rails-4-could-not-find-generator-rspecinstall
-  #for more info
+=begin
+  Version 3.0.1 required or generate rspec fails.
+  See http://stackoverflow.com/questions/22962048/rails-4-could-not-find-generator-rspecinstall
+  for more info  (note: 3.0.0 failed, 2.13.1 worked, 3.0.1 worked)
+  See also https://rubygems.org/gems/rspec-rails/versions
+=end
   gem 'rspec-rails', '3.0.1'
 end
 
