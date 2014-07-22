@@ -19,10 +19,16 @@ group :development, :test do
   See http://stackoverflow.com/questions/22962048/rails-4-could-not-find-generator-rspecinstall
   for more info  (note: 3.0.0 failed, 2.13.1 worked, 3.0.1 worked)
   See also https://rubygems.org/gems/rspec-rails/versions
+  2.14.1 required for guard-rspec to work (was 2.13.1)
 =end
-  gem 'rspec-rails', '2.13.1'
-
+  gem 'rspec-rails', '2.14.1'
   gem 'capybara', '2.1.0'
+  gem 'guard-rspec', '4.2.9'
+  gem 'libnotify', '0.8.0'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+  gem 'spork'
 
 =begin
   minitest is required by rspec-rails 2.13.1
